@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>cookieBubble.js</title>
+    <style type="text/css" src="css/normalize.min.css"></style>
+    <link rel="stylesheet" href="css/cookieBubble.css">
+    </link>
+    <style>
+        body {
+            position: relative;
+            background: orange;
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/cookieBubble.js"></script>
+    <script>
+        (function ($) {
+            $.cookieBubble({
+                buttonText: 'Gerai',
+                buttonText2: 'Atmesti',
+                messageText: 'Mes naudojame slapukus',
+                cookiePolicyButtonText: 'Skaitykite daugiau',
+                cookiePolicyButtonUrl: 'http://www.google.lt'
+            });
+        })(jQuery);
+    </script>
+</body>
+
+</html>
